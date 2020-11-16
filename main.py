@@ -15,26 +15,33 @@ def calculate_opp(hyp, adj):
     answer = sqrt(src)
     return round(answer, 2)
 
+run = True
 
-print("--------------------")
-print(" Physics Calculator ")
-print("--------------------")
-print("1) Calculate Hypotenuse")
-print("2) Calculate Adjacent")
-print("3) Calculate Opposite")
-option = int(input("Choose option: "))
+while run == True:
+    run = True
+    print("--------------------")
+    print(" Physics Calculator ")
+    print("--------------------")
+    print("1) Calculate Hypotenuse")
+    print("2) Calculate Adjacent")
+    print("3) Calculate Opposite")
+    print("4) Press q to quit")
+    option = input("Choose option: ")
 
-if option == 1:
-    adj = float(input("Enter the value for adjacent: "))
-    opp = float(input("Enter the value for opposite: "))
-    print(calculate_hyp1(adj, opp))
+    if option == 1:
+        adj = float(input("Enter the value for adjacent: "))
+        opp = float(input("Enter the value for opposite: "))
+        print(calculate_hyp1(adj, opp))
 
-elif option == 2:
-    hyp = float(input("Enter the value for hypotenuse: "))
-    opp = float(input("Enter the value for opposite: "))
-    print(calculate_adj1(hyp, opp))
+    elif option == 2:
+        hyp = float(input("Enter the value for hypotenuse: "))
+        opp = float(input("Enter the value for opposite: "))
+        print(calculate_adj1(hyp, opp))
+    
+    elif option == 'q':
+        run = False
 
-else:
-    hyp = float(input("Enter the value for hypotenuse: "))
-    adj = float(input("Enter the value for adjacent: "))
-    print(calculate_opp(hyp, adj))
+    else:
+        hyp = float(input("Enter the value for hypotenuse: "))
+        adj = float(input("Enter the value for adjacent: "))
+        print(calculate_opp(hyp, adj))
