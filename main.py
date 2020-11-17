@@ -38,10 +38,10 @@ while run == True:
         opp = float(input("Enter the value for opposite: "))
         print(calculate_adj1(hyp, opp))
     
-    elif option == 'q':
-        run = False
-
-    else:
+    elif option == '3':
         hyp = float(input("Enter the value for hypotenuse: "))
         adj = float(input("Enter the value for adjacent: "))
         print(calculate_opp(hyp, adj))
+
+    elif option == 'q':
+        run = False
