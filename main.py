@@ -28,12 +28,12 @@ while run == True:
     print("4) Press q to quit")
     option = input("Choose option: ")
 
-    if option == 1:
+    if option == '1':
         adj = float(input("Enter the value for adjacent: "))
         opp = float(input("Enter the value for opposite: "))
         print(calculate_hyp1(adj, opp))
 
-    elif option == 2:
+    elif option == '2':
         hyp = float(input("Enter the value for hypotenuse: "))
         opp = float(input("Enter the value for opposite: "))
         print(calculate_adj1(hyp, opp))
